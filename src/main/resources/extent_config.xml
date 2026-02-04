@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extent-config>
+
+    <!-- Report Title -->
+    <report>
+        <name>Test Automation Report</name>
+        <title>Extent Report for Automation Tests</title>
+    </report>
+
+    <!-- File Path to Save Report -->
+    <report-configuration>
+        <report-dir>./extentReport</report-dir>
+        <report-name>TestReport.html</report-name>
+    </report-configuration>
+
+    <!-- Theme for the Report (standard, dark, etc.) -->
+    <theme>standard</theme> <!-- Change to 'dark' for dark theme -->
+
+    <!-- Enable/Disable the Screenshot functionality -->
+    <enable-screenshots>true</enable-screenshots>
+
+    <!-- Enable/Disable the LOGO image in the report header -->
+    <enable-logo>false</enable-logo>
+
+    <!-- Enable/Disable the creation of test logs -->
+    <enable-logs>true</enable-logs>
+
+    <!-- Time format for logs -->
+    <time-format>yyyy-MM-dd HH:mm:ss</time-format>
+
+    <!-- Control Testcase Log visibility in the report -->
+    <testcase-logging>
+        <enable-logs>true</enable-logs>
+    </testcase-logging>
+
+    <!-- Configure the default 'Basic' Test status -->
+    <test-status>
+        <passed-status>green</passed-status>
+        <failed-status>red</failed-status>
+        <skipped-status>yellow</skipped-status>
+    </test-status>
+
+    <!-- Configure Browser Information for the report -->
+    <browser-info>
+        <browser-name>Chrome</browser-name>
+        <browser-version>91.0.4472.124</browser-version>
+    </browser-info>
+
+    <!-- Additional configuration for the report -->
+    <extra>
+        <include-summary>true</include-summary>
+        <include-testcase-status>true</include-testcase-status>
+    </extra>
+
+</extent-config>

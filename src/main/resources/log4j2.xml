@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{MM-dd-yyyy HH:mm:ss} %-5p [%t] %c{1}:%L - %msg%n"/>
+        </Console>
+
+        <File name="File" fileName="log/logger.log" append="true">
+            <PatternLayout pattern="%d{MM-dd-yyyy HH:mm:ss} %-5p [%t] %c{1}:%L - %msg%n"/>
+          <!--  <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+
+            </Policies>-->
+
+
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>
