@@ -803,3 +803,14 @@
 02-25-2025 01:13:51 INFO  [main] Logs:9 - Member Login is verified : 
 02-25-2025 01:13:55 INFO  [main] Logs:9 - Now we redirect to a new WebPage
 02-25-2025 01:13:55 INFO  [main] Logs:9 - Join Us Header is present 
+02-09-2026 19:30:26 DEBUG [main] PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+02-09-2026 19:30:26 DEBUG [main] PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+02-09-2026 19:30:26 DEBUG [main] PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+02-09-2026 19:30:27 DEBUG [main] POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+02-09-2026 19:30:27 INFO  [main] Logs:9 - Excel file is opened
+02-09-2026 19:30:27 INFO  [main] Logs:9 - returning excle data
+02-09-2026 19:30:28 INFO  [main] Logs:9 - user name is --Rubal  Password is --Ahmed
+02-09-2026 19:30:28 INFO  [main] Logs:9 - --Home header is verified--
+02-09-2026 19:30:28 INFO  [main] Logs:9 - Member Login is verified : 
+02-09-2026 19:30:30 INFO  [main] Logs:9 - Now we redirect to a new WebPage
+02-09-2026 19:30:30 INFO  [main] Logs:9 - Join Us Header is present 
