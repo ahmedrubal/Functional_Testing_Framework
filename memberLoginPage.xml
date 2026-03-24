@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="DemoTest_Suite">
+<suite name="MemberLoginModule">
     <listeners>
         <listener class-name="io.com_functional_testing.utils.TestListener"/>
     </listeners>
-    <parameter name="baseUrl" value="https://nktechsolutions.com/membership-login/"></parameter>
+  <!--  <parameter name="baseUrl" value="https://nktechsolutions.com/membership-login/"></parameter>-->
     <parameter name="browserName" value="chrome"></parameter>
+
 
     <test name="MemberLoginTest">
         <groups>
@@ -16,8 +17,9 @@
         </groups>
 
         <classes>
-            <class name="io.com_functional_testing.tests.MemberLoginTest">
+            <class name="io.com_functional_testing.tests.MemberLoginPageTest">
             </class>
         </classes>
     </test>
+
 </suite>

@@ -16,7 +16,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.time.Duration;
-
+// This is another approach to generate extent report
 public class Base {
     public static ExtentSparkReporter spark;
     public static ExtentReports report;

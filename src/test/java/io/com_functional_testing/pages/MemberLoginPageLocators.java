@@ -3,7 +3,7 @@ package io.com_functional_testing.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class MemberLogin {
+public class MemberLoginPageLocators {
     @FindBy (xpath = "//input[@type='text']")
    public WebElement userName;
 

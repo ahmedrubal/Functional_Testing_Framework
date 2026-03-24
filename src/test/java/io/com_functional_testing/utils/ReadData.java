@@ -13,7 +13,7 @@ public class ReadData {
 
     public static Object[][] getExcelData(String excelFilePath, String sheetName) {
         String[][] excelData = null;
-        FileInputStream fileInputStream = null;
+        FileInputStream fileInputStream=null;
         XSSFWorkbook workbook = null;
         XSSFSheet sheet = null;
 
@@ -55,7 +55,7 @@ public class ReadData {
         return excelData;
 
     }
-
+// Below method is used to check data validation before use in above method as array
     public static String getCellData(XSSFCell cell) {
         String cellData = null;
         try {

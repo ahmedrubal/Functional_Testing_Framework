@@ -12,7 +12,6 @@ public class JoinUsPage {
     public JoinUsPage() {
         joinUsPageLocators = new JoinUsPageLocators();
         PageFactory.initElements(TestBase.getDriver(),joinUsPageLocators);
-
     }
 
     public void joinUsHeaderVerify(){
@@ -22,13 +21,14 @@ public class JoinUsPage {
         }else{
             CommonActions.reportAndLog("Join Us text not visible");
         }
-//        Actions acition = new Actions(TestBase.getDriver());
-//        acition.moveToElement(joinUsPageLocators.buyLink).click();
-        joinUsPageLocators.buyLink.click();
-        TestBase.getDriver().navigate().back();
 
         CommonActions.explicitWait(20);
-        System.out.println("Now we get paypal link");
+        joinUsPageLocators.buyLink.click();
+        CommonActions.reportAndLog("paypal payment options displayed");
+        TestBase.getDriver().navigate().back();
+
+
+
 
 
     }

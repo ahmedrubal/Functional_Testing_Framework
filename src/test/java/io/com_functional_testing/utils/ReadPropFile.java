@@ -10,7 +10,7 @@ public class ReadPropFile {
      public static final String propFilePath=
             System.getProperty("user.dir")+"/config/test.properties";
      public static Properties properties=null;
-
+// this is a return type method that is used in TestBase class to read properties file.
      public static Properties propertyFile(String path){
           properties = new Properties();
          FileInputStream file;

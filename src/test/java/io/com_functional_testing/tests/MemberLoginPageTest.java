@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class MemberLoginTest extends TestBase {
+public class MemberLoginPageTest extends TestBase {
 
     // Data provider used to supply test data from Excel file
     @DataProvider(name="data")
@@ -21,23 +21,23 @@ public class MemberLoginTest extends TestBase {
     //Here i make two groups and run them from xml file
     // Must have to include group in TestBase class otherwise test will not run
     @Test(priority = 0,groups = "Sanity", dataProvider = "data")
-    void testOne(String userName ,String passWord) {
+    void provideUserInfo(String userName ,String passWord) {
         memberLoginPage.provideUserInfo(userName, passWord);
 
         Logs.logInfo("user name is --"+ userName+ "  Password is --"+passWord);
 
     }
-    @Test(priority = 1, groups = "Regression")
-    void testTwo() throws IOException {
+    @Test(priority = 1, groups = "Sanity")
+    void verifyHomeHeader() throws IOException {
         memberLoginPage.verifyHomeHeader();
     }
-    @Test(priority = 2,groups = "Regression")
-    void testThree(){
+    @Test(priority = 2,groups = "Sanity")
+    void joinUsLink(){
         memberLoginPage.clickOnJoinUsLink();
 
     }
     @Test(priority = 3,groups = "Regression")
-    void testFour(){
+    void joinUsPageVerify(){
         joinUsPage.joinUsHeaderVerify();
 
     }

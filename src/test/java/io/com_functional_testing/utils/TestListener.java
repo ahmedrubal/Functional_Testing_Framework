@@ -42,11 +42,11 @@ public class TestListener extends TestBase implements ITestListener, IAnnotation
     public void onTestFailure(ITestResult result) {
         test=report.createTest(result.getMethod().getMethodName());
         test.log(Status.FAIL,"Test is Failed");
-      //  // Below method is used to store failed Screen shot in the screen folder
+      // Below code is used to store failed Screen shot in the screen folder in my local machine
         String methodName =result.getMethod().getMethodName();
         TakesScreenshot screen = (TakesScreenshot) TestBase.getDriver();
         File sourceFile = screen.getScreenshotAs(OutputType.FILE);
-        File destinatonFile = new File("screen/"+methodName.toUpperCase()+".png");
+        File destinatonFile = new File("screen/"+methodName.toLowerCase()+".png");
         System.out.println(destinatonFile);
         try {
             FileHandler.copy(sourceFile,destinatonFile);
@@ -57,7 +57,7 @@ public class TestListener extends TestBase implements ITestListener, IAnnotation
         TakesScreenshot screenshot = (TakesScreenshot) TestBase.getDriver();
         String base64=screenshot.getScreenshotAs(OutputType.BASE64);
         test.log(Status.FAIL,test.addScreenCaptureFromBase64String(base64)+"--Exception Information--"+result.getThrowable());
-        test.log(Status.FAIL,"Screen Shot Taken");
+        test.log(Status.FAIL,"Test failed and screen shot taken");
     }
 
     @Override

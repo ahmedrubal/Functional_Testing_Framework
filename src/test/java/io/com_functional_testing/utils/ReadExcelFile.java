@@ -5,10 +5,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+// this class just to show another approach to read data using array list concept
+// I have been used Read data class for my framework that is array concept
 public class ReadExcelFile {
-    // This class is used to read excel data using ArrayList concepts
-
     // Method to read Excel file
     public static Object[][] readExcel(String filePath, String sheetName) throws IOException {
         // Load the Excel file
@@ -23,7 +22,7 @@ public class ReadExcelFile {
         List<Object[]> data = new ArrayList<>();
 
         // Iterate through the rows and columns
-        for (int i = 1; i < rows; i++) {  // Skip header row
+        for (int i = 1; i < rows; i++) {  // int i =1 used to Skip header row
             Row row = sheet.getRow(i);
             Object[] rowData = new Object[cols];
 

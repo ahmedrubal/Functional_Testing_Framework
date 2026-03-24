@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EndToEndTesting">
+    <listeners>
+        <listener class-name="io.com_functional_testing.utils.TestListener"/>
+    </listeners>
+    <parameter name="baseUrl" value="https://nktechsolutions.com/"></parameter>
+    <parameter name="browserName" value="chrome"></parameter>
+
+    <test name="Multiple Pages">
+            <classes>
+            <class name="io.com_functional_testing.tests.HomePageTest">
+            </class>
+                <class name="io.com_functional_testing.tests.MemberLoginPageTest">
+                </class>
+           </classes>
+    </test>
+
+
+
+</suite>
